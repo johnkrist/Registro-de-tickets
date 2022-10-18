@@ -36,8 +36,8 @@ export const Form = ({ city, setCity }) => {
         Descrição de Ocorrência
         <div className="container">
           <select onChange={handleCopyText} name="select">
-            <option value="Servidor esqueceu a senha de login.">
-              0-Servidor Esqueceu a Senha de Login
+            <option value="Servidor esqueceu a senha de Usuário.">
+              0-Servidor esqueceu a senha de Usuário
             </option>
             <option value="Usuário estava bloqueado.">
               1-Usuário estava bloqueado
@@ -46,25 +46,25 @@ export const Form = ({ city, setCity }) => {
               value="Servidor solicitou a instalação de software."
               selected
             >
-              2-Servidor Solicitou a Instalação de Software
+              2-Servidor solicitou a instalação de Software
             </option>
             <option value="Servidor Solicitou a Configuração de Software.">
-              3-Servidor Solicitou a Configuração de Software
+              3-Servidor solicitou a configuração de Software
             </option>
             <option value="Servidor Solicitou a Configuração ou Instalação do Token.">
-              4-Servidor Solicitou a Configuração ou Instalação do Token
+              4-Servidor solicitou a configuração ou Instalação do Token
             </option>
             <option value="Servidor Solicitou a Configuração da Internet.">
-              5-Servidor Solicitou a Configuração da Internet
+              5-Servidor solicitou a configuração da Internet
             </option>
             <option value="Servidor Solicitou a Configuração da Impressora ou Scanner.">
-              6-Servidor Solicitou a Configuração da Impressora/Scanner
+              6-Servidor solicitou a configuração da Impressora/Scanner
             </option>
             <option value="Servidor Solicitou a Conversão de Arquivos.">
-              7-Servidor Solicitou a Conversão de Arquivos
+              7-Servidor solicitou a Conversão de Arquivos
             </option>
             <option value="Servidor Solicitou a Configuração das Pastas Compartilhadas.">
-              8-Servidor Solicitou a Configuração das Pastas Compartilhadas
+              8-Servidor solicitou a configuração das Pastas Compartilhadas
             </option>
           </select>
           <button onClick={copyToClipboard}>
@@ -78,31 +78,31 @@ export const Form = ({ city, setCity }) => {
         <div className="container">
           <select onChange={handleCopyText} name="select">
             <option value="Senha de Usuário foi Alterada.">
-              0-Senha de Usuário foi Alterada
+              0-Senha de usuário foi alterada
             </option>
             <option value="Usuário foi desbloqueado.">
-              1-Usuário foi Desbloqueado
+              1-Usuário foi desbloqueado
             </option>
             <option value="Software foi instalado." selected>
-              2-Software foi Instalado
+              2-Software foi instalado
             </option>
             <option value="Software foi configurado.">
-              3-Software foi Configurado
+              3-Software foi configurado
             </option>
             <option value="Token foi configurado.">
-              4-Token foi Configurado
+              4-Token foi configurado
             </option>
             <option value="Internet foi configurada.">
-              5-Internet foi Configurada
+              5-Internet foi configurada
             </option>
             <option value="Impressora/Scanner foi configurada.">
-              6-Impressora/Scanner foi Configurada
+              6-Impressora/Scanner foi configurada
             </option>
             <option value="Arquivos foram convertidos.">
-              7-Arquivos Foram Convertidos
+              7-Arquivos foram convertidos
             </option>
-            <option value="Pastas Compartilhadas foram configuradas.">
-              8-Pastas Compartilhadas Foram Configuradas
+            <option value="Pastas compartilhadas foram configuradas.">
+              8-Pastas compartilhadas foram configuradas
             </option>
           </select>
           <button onClick={copyToClipboard}>
