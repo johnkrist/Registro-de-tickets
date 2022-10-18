@@ -4,12 +4,14 @@ export const ModalStyled = styled.div`
 display: flex;
 justify-content: center;
 
+position: absolute;
+left: 500px;
 
 
 div{
-    margin-top: 20px;
-    font-size: 22px;
-    color: gray;
+    font-size: 24px;
+    color: red;
+    border-bottom: 3px solid gray;
 }
 
 

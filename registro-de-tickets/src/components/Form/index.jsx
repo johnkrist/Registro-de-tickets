@@ -36,17 +36,35 @@ export const Form = ({ city, setCity }) => {
         Descrição de Ocorrência
         <div className="container">
           <select onChange={handleCopyText} name="select">
-            <option value="Usuário foi bloqueado">
-              1-Usuário foi bloqueado
+            <option value="Servidor esqueceu a senha de login.">
+              0-Servidor Esqueceu a Senha de Login
+            </option>
+            <option value="Usuário estava bloqueado.">
+              1-Usuário estava bloqueado
             </option>
             <option
-              value="Servidor Solicitou a Instalação de Software"
+              value="Servidor solicitou a instalação de software."
               selected
             >
               2-Servidor Solicitou a Instalação de Software
             </option>
-            <option value="Servidor Solicitou a Configuração de Software">
+            <option value="Servidor Solicitou a Configuração de Software.">
               3-Servidor Solicitou a Configuração de Software
+            </option>
+            <option value="Servidor Solicitou a Configuração ou Instalação do Token.">
+              4-Servidor Solicitou a Configuração ou Instalação do Token
+            </option>
+            <option value="Servidor Solicitou a Configuração da Internet.">
+              5-Servidor Solicitou a Configuração da Internet
+            </option>
+            <option value="Servidor Solicitou a Configuração da Impressora ou Scanner.">
+              6-Servidor Solicitou a Configuração da Impressora/Scanner
+            </option>
+            <option value="Servidor Solicitou a Conversão de Arquivos.">
+              7-Servidor Solicitou a Conversão de Arquivos
+            </option>
+            <option value="Servidor Solicitou a Configuração das Pastas Compartilhadas.">
+              8-Servidor Solicitou a Configuração das Pastas Compartilhadas
             </option>
           </select>
           <button onClick={copyToClipboard}>
@@ -59,19 +77,36 @@ export const Form = ({ city, setCity }) => {
         Descrição de Solucão
         <div className="container">
           <select onChange={handleCopyText} name="select">
-            <option value="Usuário foi Desbloqueado">
-              {" "}
+            <option value="Senha de Usuário foi Alterada.">
+              0-Senha de Usuário foi Alterada
+            </option>
+            <option value="Usuário foi desbloqueado.">
               1-Usuário foi Desbloqueado
             </option>
-            <option value="Software foi Instalado" selected>
+            <option value="Software foi instalado." selected>
               2-Software foi Instalado
             </option>
-            <option value="Software foi Configurado">
+            <option value="Software foi configurado.">
               3-Software foi Configurado
+            </option>
+            <option value="Token foi configurado.">
+              4-Token foi Configurado
+            </option>
+            <option value="Internet foi configurada.">
+              5-Internet foi Configurada
+            </option>
+            <option value="Impressora/Scanner foi configurada.">
+              6-Impressora/Scanner foi Configurada
+            </option>
+            <option value="Arquivos foram convertidos.">
+              7-Arquivos Foram Convertidos
+            </option>
+            <option value="Pastas Compartilhadas foram configuradas.">
+              8-Pastas Compartilhadas Foram Configuradas
             </option>
           </select>
           <button onClick={copyToClipboard}>
-            <FiCopy size={25} color="gray"/>
+            <FiCopy size={25} color="gray" />
           </button>
         </div>
       </label>
